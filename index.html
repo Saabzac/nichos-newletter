@@ -24,17 +24,31 @@
   height: auto;
   display: block;
 }
-  video {
-  max-width: 100%;
+figure.full-width { margin: 0; }
+
+img.full-width {
+  width: 100%;
   height: auto;
-}
-  img.full-width { width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 4px;   
+  display: block;
+  margin: 20px auto;
+  border-radius: 4px;
 }
   figcaption {
   font-style: italic;
   color: #666;
   font-size: 0.9em;
   text-align: center;
+}
+/* 기본 상태의 링크 색상 */
+a {
+  color: #333; /* 또는 기본 설정된 색상 */
+  text-decoration: none;
+  transition: color 0.3s ease; /* 색상이 부드럽게 변하도록 추가 */
+}
+
+/* 마우스를 올렸을 때(hover) 색상 변경 */
+a:hover {
+  color: var(--coral);
 }
   .quote{ font-style:italic; color:var(--coral); }
   .epilogue{ background:#F1E9D6; margin:28px 32px 8px 32px; padding:20px 22px; border-radius:6px; }
@@ -58,11 +72,10 @@
       <span class="stamp">City Getaway</span>
       <h2>31개 완주 기념 & 생일, 브리즈번행</h2>
     </div>
-
     <p class="time-tag">Day 1</p>
-    <p>남편 생일을 기념하기 위해 브리즈번으로 출발! 요양보호사로 일하려면 반드시 이수해야 하는 직장 내 필수 교육이 자그마치 31개. 몇 주를 씨름한 끝에 그 산더미 같은 모듈을 드디어 다 끝냈으니 이번 여행의 명분이 완성됐다.  </p>
+    <p>남편 생일을 기념하기 위해 브리즈번으로 출발! 마침 요양보호사로 일하려면 반드시 이수해야 하는 직장 내 필수 교육이 자그마치 31개. 몇 주를 씨름한 끝에 그 산더미 같은 모듈을 드디어 다 끝냈으니 이번 여행의 명분이 완성됐다.  </p>
 
-    <p>가는 길에  차가 떨리더니 갑자기 덜컹덜컹. 타이어인가, 팬 벨트인가 — 자신감도, 결심도, 오늘 저녁에 대한 설렘도 잠깐 흔들렸다. 그래도 시내를 관통하는 터널 미로를 뚫고 무사히 주차장에 도착. 체크인이 유난히 오래 걸린다 했더니, 마침 시내에서 큰 AFL 경기가 있었던 모양이다. 방에 겨우 짐을 풀고 포장해온 캘리포니안 채식 샐러드(일명 "히피 푸드")를 즐기며 노을을 감상, 살짝 눈을 붙였다.</p>
+    <p>가는 길에  차가 떨리더니 갑자기 덜컹덜컹. 타이어인가, 팬 벨트인가 — 자신감도, 결심도, 오늘 저녁에 대한 설렘도 잠깐 흔들렸다. 그래도 시내를 관통하는 터널 미로를 뚫고 무사히 주차장에 도착. 체크인이 유난히 오래 걸린다 했더니, 마침 시내에서 큰 AFL 경기가 있었던 모양이다. 방에 겨우 짐을 풀고 환영 음료를 한잔하니 그제서야 긴장이 풀린다. 포장해온  캘리포니안 채식 샐러드(일명 "히피 푸드")와 인도식 치즈 커리를 즐기며 노을을 감상, 살짝 눈을 붙였다.</p>
 
     <figure>
       <img src="images/welcome_drink.jpeg" alt="브리즈번에서 만난 환영 음료">
@@ -72,27 +85,28 @@
     <p>라이드셰어를 불렀는데, 기사님이 신이 나서 "포털을 여러 개 걸어두고 나만의 단골 손님을 만들면 수수료를 아낄 수 있다"는 부업 노하우를 강의해주셨다. 다음 날 만난 기사님(부업으로 정신과 간호사도 겸하신다고)도 똑같은 조언을 하는 걸 보니 브리즈번 라이드셰어 기사들 사이의 국룰인 듯. 스토리 브리지 호텔을 지나 캥거루 포인트를 미끄러지듯 지나, 마침내 브리즈번 재즈클럽 옆 페리 터미널에 도착했다.</p>
 
     <p class="time-tag">브리즈번 재즈클럽</p>
-    <p>클럽은 이미 만석. 안내받아 자리에 앉기 전, 강 위로 튀어나온 데크에서 잠깐 브리즈번 금융가 야경을 구경했다. 무대에서는 40년째 그 자리를 지켜왔다는 Caxton Street Jazz Band가 딕시랜드로 시작해 점점 더 정교한 연주로, 나중엔 블루지한 30~40년대 분위기로 넘어갔다 — 마치 영화 <카사블랑카> 속 한 장면 같았다. 안주로 나온 아란치니는 훌륭했고, 라즈베리와 아이스크림을 곁들인 초콜릿 케이크는 다음 날 아침 눈이 퉁퉁 붓도록 만들 만큼 치명적이었다. 그걸 또 좋은 코냑, 아니 좋은 버번으로 마무리해야 직성이 풀리는 우리 — 아쉽게도 원했던 호주산 라이는 그날 없었지만.</p>
-    <figure>
-      <img src="images/jazz_band.jpeg" alt="Caxton Street Jazz Band, 40년째 같은 자리" class="full-width">
-      <figcaption>Caxton Street Jazz Band, 40년째 같은 자리</figcaption>
-    </figure>
-
-    <p>50~100석 남짓한 아담한 공간이었는데(테이블 번호가 51번이었으니 최소 백 석은 넘었던 듯), 밴드 너머로 강을 오가는 배들과 반짝이는 고층 빌딩이 겹쳐 보이는 풍경은 뭐라 설명이 안 됐다. 다만 화려하게 불 밝힌 중국 도시들과 비교하게 되는 건 어쩔 수 없더라. 옆자리엔 젊은 한국인 셰프가 앉아 있었는데, 그 넓은 홀에서 한국인 둘이 나란히 앉게 된 것도 신기한 인연이었다. 콜맨 스트리트 페리로 강을 건너 리버사이드로, 다시 엘리자베스 스트리트를 따라 숙소까지 걸어오며 근사한 저녁을 마무리했다.</p>
-
-
-    <p class="time-tag">Day 2</p>
-    <p>최근에 멤버십 레벨이 올라 30프로할인 받게됐다. 기대했던 아침부페 값은 방에다 달아두려 했는데 시스템에서 자꾸 삐꾸난다. 해결하기위해 리셉션까지 가는등 골치아팠지만 다양하고 신선한 음식을 맛보니 그 수고가아깝지않다👍 입소문이 났는지 엄청 북적인다. 이젠 추천하지 말아야겠다😂
-    <p>내가 미용실에서 근사하게 머리를 다듬는 동안, 남편은 거리를 어슬렁거리다 중국 약재상에 들어가 찾던 신장 탕약 가격만 물어보고 나오려 했단다. 그런데 나이 지긋한 한약사 어르신이 어찌나 붙임성 있고 이야기를 잘하시던지, 결국 신장 탕약은 물론 얼마 전 알게 된 콩 알레르기에 좋다는 약재까지 사 들고 나왔다. 심지어 그 약사는 약을 먹을 때 그냥 먹지 말고 춤을 추면서 먹으라는 처방(?)까지 내려주셔서 한참을 웃었다는 후문.</p>
-    <figure>
-      <!-- images 폴더 안에 사진이 있는 경우 -->
-      <img src="images/haul.jpeg" alt="tcm_haul">
-      <figcaption>이번 원정의 전리품</figcaption>
-    </figure>
+    <p>클럽은 이미 만석. 안내받아 자리에 앉기 전, 강 위로 튀어나온 데크에서 잠깐 브리즈번 금융가 야경을 구경했다. 무대에서는 40년째 그 자리를 지켜왔다는 Caxton Street Jazz Band가 딕시랜드로 시작해 점점 더 정교한 연주로, 나중엔 블루지한 30~40년대 분위기로 넘어갔다 — 마치 영화 <카사블랑카> 속 한 장면 같았다. 안주로 나온 아란치니는 훌륭했고, 라즈베리와 아이스크림을 곁들인 초콜릿 케이크는 다음 날 아침 눈이 퉁퉁 붓도록 만들 만큼 치명적이었다. 그걸 또좋은 버번으로 마무리해야 직성이 풀리는 우리 — 아쉽게도 원했던 호주산 라이는 그날 없었지만.</p>
+  <figure class="full-width">
+    <img src="images/jazz_band.jpeg" alt="Caxton Street Jazz Band, 40년째 같은 자리" >
+    <figcaption>Caxton Street Jazz Band, 40년째 같은 자리</figcaption>
+  </figure>
+  <br>
+  <p>50~100석 남짓한 아담한 공간이었는데(테이블 번호가 51번이었으니 최소 백 석은 넘었던 듯), 밴드 너머로 강을 오가는 배들과 반짝이는 고층 빌딩이 겹쳐 보이는 풍경은 뭐라 설명이 안 됐다. 다만 화려하게 불 밝힌 중국 도시들과 비교하게 되는 건 어쩔 수 없더라. 옆자리엔 젊은 한국인 셰프가 앉아 있었는데, 그 넓은 홀에서 한국인 둘이 나란히 앉게 된 것도 신기한 인연이었다. 페리로 강을 건너 리버사이드로, 다시 엘리자베스 스트리트를 따라 숙소까지 걸어오며 근사한 저녁을 마무리했다.</p>
 
 
-          <p class="time-tag">Day 3</p>
-    <p>마지막 날은 종일 차를 세워둘 수 있어서 느긋하게 시내를 걸었다. 남은 마라탕 기운으로 K뷰티 쇼핑 한 바퀴, 퀸 스트리트 몰에 앉아 햇살 받으며 커피 한 잔. 그리고 남편이 사족을 못 쓰는 책방 구경 — 이번엔 중국 관련 책들을 한참 들여다보더라.</p>
+  <p class="time-tag">Day 2</p>
+  <p>최근에 멤버십 레벨이 올라 식사비의 30프로를 할인 받게됐다. 기대했던 아침부페 값은 방에다 달아두려 했는데 시스템에서 자꾸 삐꾸난다. 해결하기위해 리셉션까지 가는등 골치아팠지만 다양하고 신선한 음식을 맛보니 그 수고가아깝지않다👍 입소문이 났는지 엄청 북적인다. 이젠 추천하지 말아야겠다😂</p>
+  <p>내가 미용실에서 근사하게 머리를 다듬는 동안, 남편은 거리를 어슬렁거리다 중국 약재상에 들어가 찾던 신장 탕약 가격만 물어보고 나오려 했단다. 그런데 나이 지긋한 한약사 어르신이 어찌나 붙임성 있고 이야기를 잘하시던지, 결국 신장 탕약은 물론 얼마 전 알게 된 콩 알레르기에 좋다는 약재까지 사 들고 나왔다. 심지어 그 약사는 약 먹고나서 춤을 추면 결석이 더 잘 나온다는 팁까지 덧붙혔다.</p>
+  <p>밸리중심가에서 조금 올라가면 HSW부두로 내려가는 야외승강기가 있다. 주말인데다 겨울 햇살을 즐기러 온 사람들로 붐적인다. 중국에서처럼 간단히 QR로 주문하니 금방 향긋한 수제맥주 나온다.</p>
+  <figure>
+    <!-- images 폴더 안에 사진이 있는 경우 -->
+    <img src="images/haul.jpeg" alt="tcm_haul">
+    <figcaption>이번 원정의 전리품</figcaption>
+  </figure>
+
+
+    <p class="time-tag">Day 3</p>
+    <p>마지막 날은 종일 차를 세워둘 수 있어서 느긋하게 시내를 걸었다. K뷰티 쇼핑 한 바퀴, 퀸 스트리트 몰에 앉아 햇살 받으며 커피 한 잔. 그리고 남편이 사족을 못 쓰는 책방 구경 — 이번엔 중국 관련 책들을 한참 들여다보더라. 덜덜거리는 차를 운전해서 집까기 갈길이 걱정된다. 먼길이 될거를 우려해 떠나기전 MIXUE 버블티를 포장해 가기로했다. 그런데 서둘다가 음료하나를 떨어트려버린거다. 할수없이 돌아가 같은걸로 다시 시키니 그냥 해주겠다는거다.감동서비스</p>
 
     <p>시드니 시내 디믹스와는 다르게 여긴 2층에 하얏트 호텔 커피숍이 있는데, 지난 이틀 동안 길 건너에서 올려다보기만 했던 그 루프탑 카페를 드디어 둘러봤다. 수영장까지 딸려 있는 걸 보니 다음엔 아예 숙소를 그쪽으로 잡아볼까 싶다.</p>
     <figure class="tilt-right">
@@ -111,7 +125,7 @@
     </div>
     <p>사람들이 "밸리(the Valley)"라고 하면 대개 좀 거칠고 위험한 동네라는 인상부터 떠올린다. 조심해서 다녀야 한다는 그 동네. 그런데 막상 가보니 숨은 보석들이 곳곳에 있었다. 남편 말을 빌리자면 "겉은 지저분해 보여도 깎아보면 반짝이는 면이 나오는 원석 같은 동네"였다.</p>
 
-    <p>그러다 우연히 발견한 뒷골목의 작은 카페 — 사람이 어찌나 많던지 주문하기도 힘들었는데, 메뉴에서 처음 본 "판단(pandan)"이라는 음료에 남편이 완전히 꽂혔다. 판다누스인 줄 알았다가, 흑백 영화에 나올 법한 음료인 줄 알았다가, 인도네시아식 커피 원두인가 싶었다가 — 메뉴판을 한참 읽고 나서야 정체를 알아냈다며 며칠째 그 이야기를 하고 있다.</p>
+    <p>그러다 우연히 발견한 뒷골목의 작은 카페 — 사람이 어찌나 많던지 주문하기도 힘들었는데, "판단(pandan)"라떼가 눈에 띤다. 아시안디저트에 많이 쓰이는 잎종류인데 음료가 다행히 형광 녹색은 아니었다. 일본재즈음반이 가득한 Music nook와 다른 코너에는 태국요리 주방이 있다. 어릴때 재즈기타를 배웠다는 젊은 오디오필 태국 주인장이 나중에 나랑 한국식 먹방을 같이 하자고한다. </p>
     <figure class="tilt-right">
       <img src="images/malatang.jpeg" alt="마라탕 한 그릇">
       <figcaption>중국 여행의 기운을 되살리며</figcaption>
@@ -127,8 +141,8 @@
       <h2>드디어 인정받은 한약 신봉자</h2>
     </div>
     <p>남편은 늘 <span class="quote">"그런 게 무슨 효과가 있겠어"</span> 하며 콧방귀를 뀌던 사람인데, 이번엔 좀 달랐다. 신장결석 한약제 효과를 두 눈으로 확인하고 나니 나도 모르게 어깨가 으쓱해졌다. 몇 년 만에 처음으로 <span class="quote">"그거 좀 인정"</span>이라는 표정을 봤다면 믿으시겠는가.</p>
-    <p>얼마 전 다녀온 중국 여행이 자꾸 생각나서, 마라탕도 한 그릇 뚝딱하고 한국 화장품 쇼핑까지 곁들였다. 여행용 사이즈 제품 하나를 무작위로 집었는데 알고 보니 헤어 제품이었다. 우리 남편, 대머리인 거 다들 아시죠😂. 약재상 나오면서 둘이 한참 웃었다.</p>
-    <figure>
+    <p>얼마 전 다녀온 중국 여행이 자꾸 생각나서, 마라탕도 한 그릇 뚝딱하고 한국 화장품 쇼핑까지 곁들였다. 여행용 사이즈 제품 하나를 무작위로 집었는데 알고 보니 헤어 제품이었다. 우리 남편, 대머리인 거 다들 아시죠😂.</p>
+    <figure class="full-width">
       <img src="images/bubble_t.jpeg" alt="다시 만난 브리즈번, Bubble Tea">
       <figcaption>브리즈번에서 만난 버블티</figcaption>
     </figure>
@@ -141,8 +155,12 @@
       <span class="stamp">This & That</span>
       <h2>음악 소리에 이끌려, 아이리시 펍의 발견</h2>
     </div>
-    <p>묵었던 호텔 바로 옆 아이리시 펍을 지나 귀가하던 길, 음악 소리에 홀려 들어가고 말았다. 아들이 요즘 심취해 있다는 'Craic 문화'를 살짝 엿본 셈이다. 다음 날엔 아이리시식 카운터 밀로 점심을 먹었는데, 주문하자마자 아들에게서 답장이 왔다 — 자기도 시내 다른 펍에 와 있다고. D&D 놀이를 하러 간 게 아니라, 길훌리 펍에서 피들러들과 재밍을 하고 있었단다. Craic이 얼마나 인상 깊었던지 자료까지 찾아봤다. 우리 동네 로컬 펍에도 한번 가봐야겠다.</p>
-    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DTmdhKGFLaH/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DTmdhKGFLaH/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DTmdhKGFLaH/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Gilhooleys Irish Pub (@gilhooleys_irish_pub)</a></p></div></blockquote>
+    <p>묵었던 호텔 바로 옆 아이리시 펍을 지나 귀가하던 길, 음악 소리에 홀려 들어가고 말았다. 아들이 요즘 심취해 있다는 'Craic 문화'를 살짝 엿본 셈이다. 다음 날에 점심을 먹기위해 같은 펍으로 돌아갔다. 아뿔사~ 주문하자마자 아들에게서 답장이 왔다. 자기도 시내 다른 아일랜드펍에 와 있다고. 급히 먹고 가보니 <a href="https://www.instagram.com/reels/DTmdhKGFLaH/">길훌리 펍에서 피들러들과 재밍을 하고 있었다.</a> 예기치않게 펍크롤 한셈. </p>
+        <figure class="full-width">
+      <img src="images/jamming.jpeg" alt="길훌리 펍에서 재밍 중인 아들" >
+      <figcaption>Oscar's having a craic</figcaption>
+    </figure>
+
 <script async src="//www.instagram.com/embed.js"></script>
 
   </div>
